@@ -1,0 +1,24 @@
+mat-toolbar span {
+  font-weight: 250;
+  font-size: 30px;
+  width: 33%;
+}
+
+mat-toolbar span a {
+  color: white;
+  text-decoration: none;
+}
+
+#niqzart a {
+  font-family: "Oxanium", cursive;
+}
+
+#djangularity {
+  font-family: "Comfortaa", cursive;
+  color: aquamarine;
+  text-align: center;
+}
+
+#links {
+  text-align: right;
+}
