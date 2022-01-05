@@ -14,9 +14,12 @@ mat-toolbar span a {
 }
 
 #djangularity {
+  text-align: center;
+}
+
+#djangularity a {
   font-family: "Comfortaa", cursive;
   color: aquamarine;
-  text-align: center;
 }
 
 #links {
