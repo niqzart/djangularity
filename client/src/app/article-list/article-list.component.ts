@@ -19,9 +19,9 @@ export class ArticleListComponent implements OnInit {
   colWidth: number = 0
 
   @HostListener("window:resize", []) updateCols() {
-    this.cols = Math.floor(window.innerWidth / 220)
-    if (this.cols < 1) this.cols = 1
-    this.colWidth = Math.floor(window.innerWidth / this.cols * 0.8)
+    const width: number = Math.min(window.innerWidth, 1350)
+    this.cols = Math.max(Math.floor(width / 220), 1)
+    this.colWidth = Math.floor(width / this.cols * 0.7)
   }
 
   articles: undefined | Article[]

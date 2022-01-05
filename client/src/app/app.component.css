@@ -22,3 +22,8 @@ mat-toolbar span a {
 #links {
   text-align: right;
 }
+
+#content {
+  margin: auto;
+  max-width: 1200px;
+}

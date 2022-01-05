@@ -1,15 +1,17 @@
 <mat-toolbar color="primary">
-  <span id="niqzart">
+  <span id="niqzart" [style.padding-left.px]="padding">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/qwert45hi">
       niqzart
     </a>
   </span>
   <span id="djangularity">djangularity</span>
-  <span id="links">
+  <span id="links" [style.padding-right.px]="padding">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/qwert45hi/djangularity">
       github
     </a>
   </span>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<div id="content">
+  <router-outlet></router-outlet>
+</div>
