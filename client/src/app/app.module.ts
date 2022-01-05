@@ -8,6 +8,8 @@ import { RouterModule, Routes } from "@angular/router"
 import { ArticleListComponent } from "./article-list/article-list.component"
 import { ArticleDetailComponent } from "./article-detail/article-detail.component"
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component"
+import { MatGridListModule } from "@angular/material/grid-list"
+import { MatCardModule } from "@angular/material/card"
 
 const routes: Routes = [
   {
@@ -34,13 +36,15 @@ const routes: Routes = [
     AppComponent,
     ArticleListComponent,
     ArticleDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    RouterModule.forRoot(routes)
+    MatGridListModule,
+    MatCardModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+mat-card {
+  text-align: center;
+  height: 150px;
+}
+
+mat-card-content {
+  overflow: hidden;
+  height: 90px;
+}
+
+#left {
+  margin-right: 30px;
+}
+
+#right {
+  margin-left: 30px;
+}
