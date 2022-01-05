@@ -1,16 +1,18 @@
 <mat-grid-list [cols]="cols" rowHeight="230px">
   <mat-grid-tile *ngFor="let article of articles" [colspan]="1" [rowspan]="1">
-    <mat-card [style.width.px]="colWidth">
-      <mat-card-title>
-        {{article.title}}
-      </mat-card-title>
-      <mat-card-content>
-        {{article.content}}
-      </mat-card-content>
-      <mat-card-footer>
-        <span id="left">{{article.created}}</span>
-        <span id="right">{{article.updated}}</span>
-      </mat-card-footer>
-    </mat-card>
+    <a href="/articles/{{article.id}}">
+      <mat-card [style.width.px]="colWidth">
+        <mat-card-title>
+          {{article.title}}
+        </mat-card-title>
+        <mat-card-content>
+          {{article.content}}
+        </mat-card-content>
+        <mat-card-footer>
+          <span id="left">{{article.created}}</span>
+          <span id="right">{{article.updated}}</span>
+        </mat-card-footer>
+      </mat-card>
+    </a>
   </mat-grid-tile>
 </mat-grid-list>

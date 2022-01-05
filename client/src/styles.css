@@ -3,23 +3,27 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; user-select: none; }
 
+a {
+  text-decoration: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #222;
+  background: #222;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #555; 
-    border-radius: 5px;
+  background: #555; 
+  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+  background: #555; 
 }
