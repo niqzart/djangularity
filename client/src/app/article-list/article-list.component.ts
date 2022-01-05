@@ -1,12 +1,6 @@
 import { Component, OnInit, HostListener } from "@angular/core";
 
-interface Article {
-  id: number
-  title: string
-  content: string
-  created: string
-  updated: string
-}
+import { Article } from "../../data/articles"
 
 @Component({
   selector: "app-article-list",
