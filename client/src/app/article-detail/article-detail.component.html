@@ -29,8 +29,20 @@
   </mat-card-footer>
 </mat-card>
 
-<mat-grid-list cols=1 rowHeight="100px">
-  <mat-grid-tile>
-    TEMP
-  </mat-grid-tile>
-</mat-grid-list>
+<mat-card *ngFor="let comment of comments" class="comment">
+  <mat-card-title>
+    {{comment.username}}
+  </mat-card-title>
+  <mat-card-content>
+    {{comment.content}}
+  </mat-card-content>
+  <mat-card-footer>
+    {{comment.updated}}
+  </mat-card-footer>
+</mat-card>
+
+<div id="next">
+  <button mat-raised-button color="accent">
+    LOAD MORE!
+  </button>
+</div>

@@ -2,13 +2,13 @@ mat-card {
   margin: 10px;
 }
 
-mat-card-title {
+#article mat-card-title {
   text-align: center;
   font-size: 60px;
   line-height: 50px;
 }
 
-mat-card-content {
+#article mat-card-content {
   text-align: justify;
   font-size: large;
   line-height: 30px;
@@ -41,4 +41,9 @@ mat-form-field {
 
 ::ng-deep .mat-form-field-wrapper{
   padding: 0;
+}
+
+#next {
+  text-align: center;
+  padding-bottom: 10px;
 }
