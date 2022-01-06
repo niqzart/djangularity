@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core"
+import { FormControl, FormGroup, Validators } from "@angular/forms"
 import { ActivatedRoute } from "@angular/router"
 
 import { Article } from "../../data/articles"
@@ -12,10 +13,19 @@ export class ArticleDetailComponent implements OnInit {
 
   article: Article = { id: 1, title: "1", content: "heyuiad sgihdjaduyksgado pjisuaykdfsugaihdkfsajdy adshj ads dsa dsa dsa dfsajhdsga dsa da d ad ad sad ad sad d as d sad asd as d sad s d sad a f fa fa fg", created: "today", updated: "today" }
 
+  commentForm = new FormGroup({
+    username: new FormControl("", [Validators.required]),
+    content: new FormControl("", [Validators.required, Validators.minLength(10)]),
+  }, { updateOn: "submit" })
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     const tmp = this.route.snapshot.paramMap.get("id")?.toString()
     this.article.title = tmp ? tmp : "1"
+  }
+
+  comment(): void {
+
   }
 }

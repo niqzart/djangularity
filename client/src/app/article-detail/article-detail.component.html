@@ -13,6 +13,20 @@
 </mat-card>
 
 <mat-card id="form">
+  <form [formGroup]="commentForm" (ngSubmit)="comment()">
+    <mat-form-field appearance="outline">
+      <mat-label>Your Username</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Leave a Comment</mat-label>
+      <textarea matInput formControlName="content" cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="4" cdkAutosizeMaxRows="15"></textarea>
+    </mat-form-field>
+  </form>
+  <mat-card-footer>
+    <button mat-raised-button disabled color="accent">Comment</button>
+  </mat-card-footer>
 </mat-card>
 
 <mat-grid-list cols=1 rowHeight="100px">
