@@ -1,0 +1,43 @@
+mat-card {
+  margin: 10px;
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+mat-card-content {
+  text-align: justify;
+  font-size: large;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+#article mat-card-footer {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+  font-size: 26px;
+  font-family: Roboto Mono;
+  line-height: 40px;
+}
+
+mat-form-field {
+  width: 100%;
+  font-size: 18px;
+}
+
+#form mat-card-footer {
+  text-align: right;
+  margin-right: 0;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+::ng-deep .mat-form-field-wrapper{
+  padding: 0;
+}

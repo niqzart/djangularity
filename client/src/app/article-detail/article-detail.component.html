@@ -1,1 +1,30 @@
-<p>article-detail works!</p>
+<mat-card id="article">
+  <mat-card-title>
+    {{article.title}}
+  </mat-card-title>
+  <mat-card-content>
+    {{article.content}}
+  </mat-card-content>
+  <mat-card-footer>
+    <b>Created:</b> {{article.created}}
+    <br>
+    <b>Last Updated:</b> {{article.updated}}
+  </mat-card-footer>
+</mat-card>
+
+<mat-card id="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Leave a Comment</mat-label>
+    <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="15"></textarea>
+  </mat-form-field>
+  <mat-card-footer>
+    <button mat-raised-button color="accent">Comment</button>
+  </mat-card-footer>
+</mat-card>
+
+<mat-grid-list cols=1 rowHeight="100px">
+  <mat-grid-tile>
+    TEMP
+  </mat-grid-tile>
+</mat-grid-list>
